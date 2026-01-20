@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tasmayu Swain | ML Developer</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: rgba(255,255,255,0.05);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --border: rgba(255,255,255,0.08);
+    }
+
+    body.light {
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #4b5563;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 24px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 70px;
+      font-size: 1.8rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    p { color: var(--muted); }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Header */
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .toggle {
+      cursor: pointer;
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      background: var(--card);
+    }
+
+    .hero {
+      max-width: 850px;
+    }
+
+    .links a {
+      margin-right: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: white;
+      font-weight: 600;
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      backdrop-filter: blur(12px);
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(56,189,248,0.15);
+      color: var(--accent);
+      margin: 4px 6px 6px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    footer {
+      margin-top: 100px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <strong>Tasmayu Swain</strong>
+    <div class="toggle" onclick="toggleTheme()">🌙 / ☀️</div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Machine Learning Developer</h1>
+    <p>
+      Aspiring ML developer focused on LLMs, multimodal reasoning systems,
+      Graph Neural Networks, and research-grade AI pipelines.
+      Passionate about open-source and real-world impact.
+    </p>
+
+    <div class="links">
+      <a href="mailto:tasmayu.swain@gmail.com">Email</a>
+      <a href="https://github.com/TASMAYU">GitHub</a>
+      <a href="https://www.linkedin.com/in/tasmayu-swain-27b886312">LinkedIn</a>
+    </div>
+
+    <a class="btn" href="resume.pdf" download>⬇ Download Resume (PDF)</a>
+  </section>
+
+  <!-- Education -->
+  <h2>Education</h2>
+  <div class="card">
+    <b>B.Tech in Computer Science Engineering</b><br>
+    MAIT Delhi (GGSIPU) — 2024–2028<br>
+    CGPA: <b>9.04</b>
+  </div>
+
+  <!-- Skills -->
+  <h2>Skills</h2>
+  <div class="card">
+    <span class="tag">Python</span>
+    <span class="tag">PyTorch</span>
+    <span class="tag">TensorFlow</span>
+    <span class="tag">Hugging Face</span>
+    <span class="tag">LangChain</span>
+    <span class="tag">LLMs</span>
+    <span class="tag">RAG</span>
+    <span class="tag">GNN</span>
+    <span class="tag">FastAPI</span>
+    <span class="tag">Docker</span>
+    <span class="tag">BioPython</span>
+  </div>
+
+  <!-- Projects -->
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <b>PLEXUS AI — Multimodal AI Doctor</b>
+      <div>
+        <span class="tag">LLM</span>
+        <span class="tag">Whisper</span>
+        <span class="tag">Gradio</span>
+      </div>
+      <ul>
+        <li>Real-time disease prediction from image/webcam</li>
+        <li>Speech + text medical guidance</li>
+      </ul>
+      <a href="https://github.com/TASMAYU/MULTIMODAL-AI-DOCTOR-">GitHub →</a>
+    </div>
+
+    <div class="card">
+      <b>AURA — GenAI Research Assistant</b>
+      <div>
+        <span class="tag">RAG</span>
+        <span class="tag">LangChain</span>
+        <span class="tag">FastAPI</span>
+      </div>
+      <ul>
+        <li>arXiv paper analysis with citation-aware reasoning</li>
+        <li>Top 10 / 700+ at T-Hacks 8.0</li>
+      </ul>
+      <a href="https://github.com/TASMAYU/RESEARCH-ASSISTANT">GitHub →</a>
+    </div>
+
+    <div class="card">
+      <b>GEN-RESIST — Antibiotic Resistance Prediction</b>
+      <div>
+        <span class="tag">Bioinformatics</span>
+        <span class="tag">GNN</span>
+        <span class="tag">GAT</span>
+      </div>
+      <ul>
+        <li>Genome-based resistance prediction</li>
+        <li>k-mer + graph attention models</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <b>GPT-2 From Scratch</b>
+      <div>
+        <span class="tag">Transformers</span>
+        <span class="tag">PyTorch</span>
+      </div>
+      <ul>
+        <li>Built 125M-parameter GPT-2</li>
+        <li>Deep architectural understanding</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Hackathons -->
+  <h2>Hackathons</h2>
+  <div class="card">
+    <ul>
+      <li>T-Hacks 8.0 — Top 10 / 700+</li>
+      <li>HACKLLM (IIIT Delhi) — Top 50 / 110</li>
+      <li>ISRO BAH 2025 — PM2.5 Estimation System</li>
+    </ul>
+  </div>
+
+  <footer>
+    © 2026 Tasmayu Swain • GitHub Pages
+  </footer>
+
+</div>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("light");
+    localStorage.setItem("theme",
+      document.body.classList.contains("light") ? "light" : "dark");
+  }
+
+  if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light");
+  }
+</script>
+
+</body>
+</html>
